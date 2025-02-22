@@ -14,14 +14,19 @@ You can run **My Book Library** with minimal configuration using Docker.
 ## Getting Started
 
 1. Copy the `docker-compose.yml` from the root directory of this repository.
-2. Set the environment variables `HOST_UID` and `HOST_GID` to match your current user.
-3. Books access
+2. Books access
    * Ensure this line points to the location of your ePubs on your host machine: `- ./books:/app/storage/app/public/books`
-4. (optional) Logs access
+
+### Optional Steps
+
+1. Set the environment variables `HOST_UID` and `HOST_GID` to match your current user.
+2. Logs access
    * If you wish to access logs from the host, update the host mapping for logs: `- ./logs:/app/storage/logs`
    * Otherwise, you may remove this line: `- ./logs:/app/storage/logs`
-5. (optional) Port mapping
+3. Port mapping
    * If you wish to change your host port, update `- "3000:3000"` to use your preferred host port.
+
+### Start the service
 
 With those few adjustments, launch the service with `docker-compose up -d`. Your app will be available at http://127.0.0.1:3000 or the port that you specified.
 
