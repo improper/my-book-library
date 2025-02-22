@@ -7,11 +7,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "intervention/image": "^3.11",
+        "intervention/image-laravel": "^1.5",
         "laravel/breeze": "^2.3",
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.4",
-        "livewire/volt": "^1.0"
+        "livewire/volt": "^1.0",
+        "mikespub/php-epub-meta": "^3.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
