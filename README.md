@@ -40,7 +40,7 @@ Yes, some versions of Kobo have an internet browser that will enable you to down
 3. Visit the URL of your app using your LAN IP (commonly `http://192.168.1.{?}:3000`). You'll need to determine your LAN IP.
 4. Tap "Get" to download the book to your Kobo.
 
-> [!TIP] Tap the `...` icon to set **My Book Library* website as your Kobo browser homepage.
+> [!TIP] Tap the `...` icon to set *My Book Library* website as your Kobo browser homepage.
 
 ## Kindle & other devices
 
