@@ -17,7 +17,7 @@ class EbookList extends Component
     public function mount()
     {
         // Find all EPUB files in the 'books' directory
-        $files = Storage::disk('public')->files('books');
+        $files = Storage::disk('public')->allFiles('books');
 
         foreach ($files as $file) {
             if (pathinfo($file, PATHINFO_EXTENSION) === 'epub') {
