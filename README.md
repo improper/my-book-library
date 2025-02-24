@@ -25,6 +25,22 @@ You can run **My Book Library** with minimal configuration using Docker.
    * Otherwise, you may remove this line: `- ./logs:/app/storage/logs`
 3. Port mapping
    * If you wish to change your host port, update `- "3000:3000"` to use your preferred host port.
+  
+The end result may look something like:
+
+```yaml
+services:
+  my-book-library:
+    image: improper/my-book-library:latest
+    container_name: my-book-library
+    restart: unless-stopped
+    # user: "${HOST_UID}:${HOST_GID}" # Match to your user
+    ports:
+      - "3000:3000"
+    volumes:
+    #  - ./logs:/app/storage/logs
+      - ./books:/app/storage/app/public/books
+```
 
 ### Start the service
 
